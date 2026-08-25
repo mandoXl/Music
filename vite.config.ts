@@ -5,6 +5,7 @@ import { fileURLToPath, URL } from 'node:url';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: './', // <-- السطر السحري ده هو اللي بيحل مشكلة الشاشة البيضاء نهائياً
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
